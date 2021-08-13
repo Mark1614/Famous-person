@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--针对手机页面,宽度和设备宽度相同，最大最小缩放比例为1倍，用户不准缩放-->
+    <!-- meta:vp+tab即可得到下面的代码 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>  
     <title>Document</title>
     <style>
       img {
@@ -17,6 +19,7 @@
         <li><a href="#Jay">个人简介</a></li>
         <li><a href="#events">重要事件</a></li>
         <li><a href="#zp">作品</a></li>
+        <!-- 图片大小尽量不要超过300k -->
         <li><a href="#photo">生活照</a></li>
         <li><a href="#sp">生平</a></li>
       </ol>
@@ -114,9 +117,21 @@
     </table>
     <h2 id="photo">生活照</h2>
 
-    <div><img width="400" src="images/1.jpg" alt="图一" /></div>
-    <div><img width="400" src="images/2.jpg" alt="图二" /></div>
-    <div><img width="400" src="images/3.jpg" alt="图三" /></div>
+    <div>
+      <a href="images/1.jpg" target="_blank"
+        ><img width="400" src="images/1.jpg" alt="图一"
+      /></a>
+    </div>
+    <div>
+      <a href="images/2.jpg" target="_blank"
+        ><img width="400" src="images/2.jpg" alt="图二"
+      /></a>
+    </div>
+    <div>
+      <a href="images/3.jpg" target="_blank"
+        ><img width="400" src="images/3.jpg" alt="图三"
+      /></a>
+    </div>
 
     <h2 id="sp">生平</h2>
     <p>周杰伦的一生</p>
